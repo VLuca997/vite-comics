@@ -8,33 +8,33 @@ export default {
 </script>
 
 <template>
-    <div class="my-boxContainer">
-        <div class="box">
-            <div class="box-content d-flex p-3 justify-content-baseline">
+    <div class="my-cardContainer">
+        <div class="card">
+            <div class="card-content d-flex p-3 justify-content-baseline">
             <i>Icona</i>
             <p>Contenuto</p>
             </div>
         </div>
-        <div class="box">
-            <div class="box-content d-flex p-3 justify-content-baseline">
+        <div class="card">
+            <div class="card-content d-flex p-3 justify-content-baseline">
             <i>Icona</i>
             <p>Contenuto</p>
             </div>
         </div>
-        <div class="box">
-            <div class="box-content d-flex p-3 justify-content-baseline">
+        <div class="card">
+            <div class="card-content d-flex p-3 justify-content-baseline">
             <i>Icona</i>
             <p>Contenuto</p>
             </div>
         </div>
-        <div class="box">
-            <div class="box-content d-flex p-3 justify-content-baseline">
+        <div class="card">
+            <div class="card-content d-flex p-3 justify-content-baseline">
             <i>Icona</i>
             <p>Contenuto</p>
             </div>
         </div>
-        <div class="box">
-            <div class="box-content d-flex p-3 justify-content-baseline">
+        <div class="card">
+            <div class="card-content d-flex p-3 justify-content-baseline">
             <i>Icona</i>
             <p>Contenuto</p>
             </div>
@@ -46,13 +46,14 @@ export default {
 
 <style lang="scss" scoped>
     
-    .my-boxContainer {
+    .my-cardContainer {
     display: flex;
-    width: 80vw;
+    
     height: 9.375rem;
 }
 
-.box {
+.card {
+    border-radius: 0%;
     flex: 1;
     display: flex;
     justify-content: center;
