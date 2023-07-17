@@ -43,5 +43,8 @@ export default {
 </template>
 
 <style scoped>
-  
+  .my-container{
+    max-width: 80%;
+    margin: 0 auto;
+  }
 </style>
