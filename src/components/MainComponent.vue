@@ -7,43 +7,12 @@ export default {
 }
 </script>
 <template>
-    <div class="container-generale">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>     
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>   
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-
-            
-    </div>
+<h3>Main-Card-Component</h3>
 </template>
 <style lang="scss" scoped>
 
-.container-generale{
-    padding: 50px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
+h3{
+    color: red;
+    text-align: center;
 }
-.item{
-    height: 100px;
-    width: 100px;
-
-}
-.item:nth-child(even){
-    background-color: red;
-    
-}
-.item:nth-child(odd){
-        background-color: blue;
-}   
-
 </style>

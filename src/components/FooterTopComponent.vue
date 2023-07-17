@@ -8,13 +8,12 @@ export default {
 </script>
 
 <template >
-    <h3>FOOTER BOTTOM</h3>
+    <h3>FOOTER TOP</h3>
 </template>
 
-<style lang="scss" scoped>
-h3{
-    text-align: center;
-    color: red;
-}
+<style lang="scss" scoped >
+    h3{
+        text-align: center;
+    }
 
 </style>
