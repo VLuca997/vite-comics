@@ -1,42 +1,47 @@
 <script>
 // my-component.js
+
 export default {
     data() {
-    return 
+        return {
+            cards: [
+            {
+                imgSrc: "/src/assets/img/buy-comics-digital-comics.png",
+                altText: "DIGITAL COMICS",
+                title: "DIGITAL COMICS",
+            },
+            {
+                imgSrc: "/src/assets/img/buy-comics-merchandise.png",
+                altText: "DC MERCHANDISE",
+                title: "DC MERCHANDISE",
+            },
+            {
+                imgSrc: "/src/assets/img/buy-comics-subscriptions.png",
+                altText: "SUBSCRIPTION",
+                title: "SUBSCRIPTION",
+            },
+            {
+                imgSrc: "/src/assets/img/buy-comics-shop-locator.png",
+                altText: "COMIC CHOP LOCATOR",
+                title: "COMIC CHOP LOCATOR",
+            },
+            {
+                imgSrc: "/src/assets/img/buy-dc-power-visa.svg",
+                altText: "DC POWER VISA",
+                title: "DC POWER VISA",
+            },
+            ],
+        };
     },
-}
+};
 </script>
 
 <template>
     <div class="my-cardContainer">
-        <div class="card">
+        <div v-for="(card, index) in cards" :key="index" class="card">
             <div class="card-content d-flex p-3">
-            <i><img src="../assets/img/buy-comics-digital-comics.png" alt=""></i>
-            <p>DIGITAL COMICS</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content d-flex p-3">
-            <i><img src="../assets/img/buy-comics-merchandise.png" alt=""></i>
-            <p>DC MERCHANDISE</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content d-flex p-3">
-            <i><img src="../assets/img/buy-comics-subscriptions.png" alt=""></i>
-            <p>SUBSCRIPTION</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content d-flex p-3">
-            <i><img src="../assets/img/buy-comics-shop-locator.png" alt=""></i>
-            <p>COMIC CHOP LOCATOR</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content d-flex p-3">
-            <i><img src="../assets/img/buy-dc-power-visa.svg" alt=""></i>
-            <p>DC POWER VISA</p>
+                <i><img :src="card.imgSrc" :alt="card.altText"></i>
+                <p>{{ card.title }}</p>
             </div>
         </div>
     </div>
@@ -45,35 +50,32 @@ export default {
 
 
 <style lang="scss" scoped>
-    
-    .my-cardContainer {
+.my-cardContainer {
     display: flex;
-    
     height: 9.375rem;
 }
+
 .card-content {
-        display: flex;
-        align-items: center;
-    }
-    
-    .card-content i {
-        margin-right: 10px;
-    }
-    i > img{
-        height: 50px;
-    }
-    i:nth-child(5){
-        height: 1000px;
-    }
-    
-    .card-content p {
-        line-height: 1;
-        font-size: 10px;
-    }
+    display: flex;
+    align-items: center;
+}
+
+.card-content i {
+    margin-right: 10px;
+}
+
+i > img {
+    height: 50px;
+}
+
+.card-content p {
+    line-height: 1;
+    font-size: 10px;
+}
 
 .card {
     border-radius: 0%;
-    flex: 1;
+    flex: 1 0 20%; /* Imposta la larghezza del 20% */
     display: flex;
     justify-content: center;
     align-items: center;

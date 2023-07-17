@@ -28,57 +28,13 @@ export default {
 				<div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
 
 					<ul class="navbar-nav">
-
-						<li class="nav-item">
-
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-
-						</li>
-						<li class="nav-item">
+						<!-- cicliamo 10 li  -->
+						<li v-for="i in 10" :key="i" class="nav-item">
 
 							<a class="nav-link active" aria-current="page" href="#">Home</a>
 
 						</li>
-						<li class="nav-item">
-
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-
-						</li>
-						<li class="nav-item">
-
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-
-						</li>
-						<li class="nav-item">
-
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-
-						</li>
-						<li class="nav-item">
-
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-
-						</li>
-						<li class="nav-item">
-
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-
-						</li>
-						<li class="nav-item">
-
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-
-						</li>
-						<li class="nav-item">
-
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-
-						</li>
-						<li class="nav-item">
-
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-
-						</li>
+						
 					</ul>
 					
 				</div>

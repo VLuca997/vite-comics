@@ -5,6 +5,7 @@ import MainComponent from './components/MainComponent.vue';
 import MainTopComponent from './components/MainTopComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import FooterTopComponent from './components/FooterTopComponent.vue';
+import cardComponent from './components/cardComponent.vue';
 
 
 
@@ -12,7 +13,9 @@ import FooterTopComponent from './components/FooterTopComponent.vue';
 export default {
   name:"App",
   data() {
-    return 
+    return {
+      
+    }
   },
   components:{
     // HEADER
@@ -27,6 +30,8 @@ export default {
     FooterComponent,
     FooterTopComponent,
 
+    //CARD-ELEMENT
+    cardComponent,
   }
 }
 </script>
@@ -69,6 +74,11 @@ export default {
         </div>
       </section>
     </div>
+    <div>
+    <div class="my-container">
+    <cardComponent/>
+    </div>
+  </div>  
 </template>
 
 <style scoped>
