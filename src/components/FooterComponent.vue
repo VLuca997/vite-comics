@@ -8,8 +8,7 @@ export default {
 </script>
 
 <template>
-    <div class="footer-content d-flex justify-content-between align-items-center py-4
-    ">
+    <div class="footer-content d-flex justify-content-between align-items-center py-4">
       <div>
         <button type="button" class="btn btn-outline-secondary text-light fw-bolder">SIGN-UP NOW!</button>
       </div>
@@ -37,5 +36,9 @@ export default {
   }
   h4 {
     color: rgb(9, 129, 249);
+  }
+  .footer-content{
+    position: relative;
+        
   }
 </style>

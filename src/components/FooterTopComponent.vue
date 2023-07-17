@@ -12,25 +12,47 @@ export default {
             <div class="ul-container">
                 <div class="container">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-auto -auto ">
                         <ul class="list-unstyled">
-                            <li>Elemento 1</li>
-                            <li>Elemento 2</li>
-                            <li>Elemento 3</li>
+                            <li class="text-light fw-bold mt-5"><p>DC COMICS</p></li>
+                            <li class="list">Characters</li>
+                            <li class="list">Comics</li>
+                            <li class="list">Movies</li>
+                            <li class="list">TV</li>
+                            <li class="list">Games</li>
+                            <li class="list">Videos</li>
+                            <li class="list">News</li>
+                            
+                            <li class="text-light fw-bold mt-3"><p>SHOP</p></li>
+                            <li class="list">Shop DC</li>
+                            <li class="list">Shop DC Collectibles</li>
+                            <li class="list"></li>
                         </ul>
                         </div>
-                        <div class="col">
+                        <div class="col-auto ">
                         <ul class="list-unstyled">
-                            <li>Elemento 4</li>
-                            <li>Elemento 5</li>
-                            <li>Elemento 6</li>
+                            <li class="text-light fw-bold mt-5"><p>DC </p></li>
+                            <li class="list">Characters</li>
+                            <li class="list">Comics</li>
+                            <li class="list">Movies</li>
+                            <li class="list">TV</li>
+                            <li class="list">Games</li>
+                            <li class="list">Videos</li>
+                            <li class="list">News</li>
+                            <li class="list">News</li>
+                            <li class="list">Elemento 4</li>
+                            <li class="list">Elemento 5</li>
+                            <li class="list">Elemento 6</li>
                         </ul>
                         </div>
-                        <div class="col">
+                        <div class="col-auto ">
                         <ul class="list-unstyled">
-                            <li>Elemento 7</li>
-                            <li>Elemento 8</li>
-                            <li>Elemento 9</li>
+                            <li class="text-light fw-bold mt-5"><p>SITES</p></li>
+                            <li class="list">Characters</li>
+                            <li class="list">Comics</li>
+                            <li class="list">Movies</li>
+                            <li class="list">TV</li>
+                            <li class="list">Games</li>
                         </ul>
                         </div>
                     </div>
@@ -46,9 +68,8 @@ export default {
 
 <style lang="scss" scoped >
 
-.img-logo{
-    
-    overflow-y: hidden;
-    height: 350px
+
+.list{
+    color: gray;
 }
 </style>
