@@ -58,7 +58,9 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: none;
+    background-color: transparent;
+    color: white;
 }
 
 </style>
